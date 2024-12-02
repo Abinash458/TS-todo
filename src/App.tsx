@@ -6,7 +6,7 @@ import "./App.css";
 const App = () => {
   return (
     <main>
-      <h1>TODO REACT + TYPESCTIPT </h1>
+      <h1 style={{ marginBottom: 50 }}> TODO APP </h1>
       <Navbar />
       <AddTodo />
       <Todos />

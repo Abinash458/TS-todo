@@ -142,3 +142,122 @@ label{
     justify-self: center;
     letter-spacing: .1rem;
 }
+
+
+/* Base Styles remain the same */
+
+/* Extra Small Devices (Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    main {
+        margin-top: 5rem;
+    }
+
+    nav {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    form input {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .main-task li {
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-task li button {
+        margin: 1rem auto;
+    }
+}
+
+/* Small Devices (576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    nav {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    form input {
+        width: 90%;
+    }
+
+    .main-task li {
+        grid-template-columns: 2fr 1fr;
+        width: 90%;
+    }
+
+    .main-task li button {
+        padding: .5rem 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    nav {
+        width: 70%;
+    }
+
+    nav a {
+        font-size: 2rem;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    .main-task li {
+        grid-template-columns: repeat(3, 1fr);
+        width: 70%;
+    }
+
+    .main-task li button {
+        width: 6rem;
+        padding: .5rem 1rem;
+    }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    nav {
+        width: 60rem;
+    }
+
+    form input {
+        width: 60rem;
+    }
+
+    .main-task li {
+        grid-template-columns: repeat(3, 1fr);
+        width: 60rem;
+    }
+}
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+    nav {
+        width: 55rem;
+    }
+
+    form input {
+        width: 55rem;
+    }
+
+    .main-task li {
+        width: 55rem;
+    }
+}
